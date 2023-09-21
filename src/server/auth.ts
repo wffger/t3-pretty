@@ -63,9 +63,9 @@ export const authOptions: NextAuthOptions = {
      * @see https://next-auth.js.org/providers/github
      */
     CognitoProvider({
-      clientId: process.env.COGNITO_CLIENT_ID,
-      clientSecret: process.env.COGNITO_CLIENT_SECRET,
-      issuer: process.env.COGNITO_ISSUER,
+      clientId: env.COGNITO_CLIENT_ID,
+      clientSecret: env.COGNITO_CLIENT_SECRET,
+      issuer: env.COGNITO_ISSUER,
     })
   ],
 };
